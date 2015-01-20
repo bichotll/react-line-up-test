@@ -7,7 +7,7 @@ var content = document.getElementById('content');
 
 var Routes = (
   <Route handler={App}>
-    <Route name="/" handler={App}/>
+    <Route name="/" path="/category/:category/when/:when" handler={App}/>
   </Route>
 );
 
