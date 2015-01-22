@@ -54,6 +54,10 @@ module.exports = {
                 loader: "url-loader?limit=10000&minetype=application/font-woff"
             },
             {
+                test: /\.woff2$/,
+                loader: "url-loader?limit=10000&minetype=application/font-woff"
+            },
+            {
                 test: /\.ttf$/,
                 loader: "file-loader"
             },
@@ -68,7 +72,11 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        new webpack.ProvidePlugin({
+           $: "jquery",
+           jQuery: "jquery"
+       })
     ]
 
 };

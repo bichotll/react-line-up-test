@@ -8,7 +8,7 @@ var Menu = React.createClass({
   render: function () {
     return (
         <div>
-            <ul class="nav nav-pills">
+            <ul className="nav nav-pills">
                 <li>
                     <a href="#category/all/when/this-week">All</a>
                 </li>
@@ -16,7 +16,7 @@ var Menu = React.createClass({
                     <a href="#category/music/when/this-week">Music</a>
                 </li>
             </ul>
-            <ul class="nav nav-pills">
+            <ul className="nav nav-pills">
                 <li>
                     <a href="#category/music/when/today">Today</a>
                 </li>

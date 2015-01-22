@@ -10,7 +10,8 @@ var eventService = require('./../services/event-service.js');
 // Export React so the devtools can find it
 (window !== window.top ? window.top : window).React = React;
 
-//require('bootstrap-sass-webpack');
+require('bootstrap');
+require('bootstrap/dist/css/bootstrap.min.css');
 //require('../../styles/App.sass');
 
 var App = React.createClass({
@@ -46,7 +47,7 @@ var App = React.createClass({
     },
     render: function () {
         return (
-            <div class="container">
+            <div className="container">
                 <div>{this.getParams()}</div>
                 <Header/>
                 <Menu/>
